@@ -1,0 +1,118 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $primary-dark;
+  color: $white-color;
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+
+    & img {
+      display: block;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+
+    &:last-child {
+      border-bottom: none
+    }
+  }
+
+  &__questions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 68%;
+
+    & .btn {
+      background: $white-color;
+      color: $primary-dark;
+      padding: 30px 0;
+      width: 100%;
+      font-size: 16px;
+      font-weight: 700;
+  
+      & img {
+        display: none;
+      }
+    }
+  }
+
+  &__question {
+    &-text {
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 83%;
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &-title {
+      font-size: 14px;
+    }
+    &-data {
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 92%;
+
+    &-top, &-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-bottom {
+      .btn {
+        background: $white-color;
+        border-radius: 5px;
+        width: 60px;
+        padding: 0;
+
+        span {
+          display: none;
+        }
+      }
+    }
+
+    &-link {
+      text-decoration: none;
+      color: $white-color;
+      cursor: pointer;
+    }
+  }
+
+  &__sm {
+    display: flex;
+    gap: 20px;
+
+    &-link {
+      cursor: pointer;
+    }
+  }
+}

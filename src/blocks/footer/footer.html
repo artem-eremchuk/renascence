@@ -1,0 +1,66 @@
+  <footer class="footer">
+    <div class="footer__block">
+      <div class="footer__questions">
+        <div class="footer__logo">
+          <img src="assets/images/logo-white.svg" alt="logo">
+        </div>
+        <div class="footer__question">
+          <div class="footer__question-text">
+            <strong>Остались вопросы? </strong> <br>
+            <span>Закажите бесплатную консультацию</span>
+          </div>
+        </div>
+        @@include('../button/button.html', {"text": "Заказать консультацию", "image": "assets/images/icons/arrow.svg" })
+        <!-- выдает ошибку если не передать параметр image, только в этом месте, хотя делаю dispaly: none для изображения -->
+      </div>
+    </div>
+    <div class="footer__block">
+      <div class="footer__contacts">
+        <div class="footer__contact">
+          <div class="footer__contact-title">Телефон:</div>
+          <div class="footer__contact-data">+7 982 45-22-67</div>
+        </div>
+        <div class="footer__contact">
+          <div class="footer__contact-title">Ел. почта:</div>
+          <div class="footer__contact-data">vozrojdenie@yandex.ru</div>
+        </div>
+        <div class="footer__contact">
+          <div class="footer__contact-title">Адрес офиса:</div>
+          <div class="footer__contact-data">Ярославская обл. Ярославль, Почтовая улица 12/2</div>
+        </div>
+        <div class="footer__contact">
+          <div class="footer__contact-title">Адрес обекта:</div>
+          <div class="footer__contact-data">Ярославская обл. Ярославль, рядом с ул. Бабича 10/22</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__block">
+      <div class="footer__info">
+        <div class="footer__info-top">
+          <a href="#" class="footer__info-link">
+            Политика конфиденциальности
+          </a>
+          <a href="#" class="footer__info-link">
+            Документы
+          </a>
+        </div>
+        <div class="footer__info-bottom">
+          <div class="footer__sm">
+            <a href="#" class="footer__sm-link">
+              <img src="assets/images/icons/vk.svg" alt="vkontakte">
+            </a>
+            <a href="#" class="footer__sm-link">
+              <img src="assets/images/icons/telegram.svg" alt="telegram">
+            </a>
+            <a href="#" class="footer__sm-link">
+              <img src="assets/images/icons/instagram.svg" alt="instagram">
+            </a>
+          </div>
+          @@include('../button/button.html',
+          {
+          "image": "assets/images/icons/arrow.svg"
+          })
+        </div>
+      </div>
+    </div>
+  </footer>

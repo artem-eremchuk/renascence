@@ -1,0 +1,27 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: fit-content;
+  height: fit-content;
+  padding: 10px 0;
+  border: none;
+  border-radius: 79px;
+  background: $gradient-color;
+  color: $white-color;
+  box-shadow: 0px -2px 0px 0px rgba(0, 32, 64, 0.10) inset, 0px 2px 0px 0px rgba(255, 255, 255, 0.25) inset, 0px 10px 10px 0px rgba(0, 32, 64, 0.10);
+  cursor: pointer;
+
+  &:hover {
+    background: $primary-color;
+  }
+
+  &:active {
+    background: $gradient-color;
+  }
+
+  &__img {
+    display: block;
+  }
+}

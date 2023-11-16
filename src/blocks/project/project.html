@@ -1,0 +1,32 @@
+<div class="project">
+  <div class="project__img">
+    <img src=@@image alt="">
+  </div>
+  <div class="project__info">
+    <h3 class="project__title">@@title</h3>
+    <div class="project__description">
+      <div class="project__description-block">
+        <div class="project__description-block-img">
+          <img src=@@apartment-img alt="icon">
+          @@apartment-data
+        </div>
+        <div class="project__description-block-text">
+          @@apartment-text
+        </div>
+      </div>
+      <div class="project__description-block">
+        <div class="project__description-block-img">
+          <img src=@@floor-img alt="icon">
+          @@floor-data
+        </div>
+        <div class="project__description-block-text">
+          @@floor-text
+        </div>
+      </div>
+    </div>
+    @@include('../button/button.html',
+    {"text": "Выбрать квартиру",
+    "image": "assets/images/icons/white-building.svg"
+    })
+  </div>
+</div>
