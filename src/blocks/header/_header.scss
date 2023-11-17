@@ -3,9 +3,15 @@
   align-items: center;
   justify-content: space-between; 
   position: relative;
-  height: 100px;  
+  height: $header-height;  
   padding: 0 20px;
-  background: rgba(255, 255, 255, 0.50);
+  background: rgba(255, 255, 255, 0.80);
+  backdrop-filter: blur(2.5px);
+  position: fixed;
+  margin-top: -$header-height;
+  left: 0;
+  right: 0;
+  z-index: 10;
 
   &__logo img {
     display: block;
