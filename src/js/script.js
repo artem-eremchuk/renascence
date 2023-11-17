@@ -11,3 +11,10 @@ menuBtn.addEventListener("click", () => {
     menuBtnImg.src = "assets/images/icons/burger.svg";
   }
 });
+
+window.addEventListener("resize", () => {
+  if (window.screen.width > 1180) {
+    headerNav.classList.remove("menu-is-open");
+    menuBtnImg.src = "assets/images/icons/burger.svg";
+  }
+});

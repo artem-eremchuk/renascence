@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between; 
-  position: relative;
   height: $header-height;  
   padding: 0 20px;
   background: rgba(255, 255, 255, 0.80);
@@ -12,6 +11,10 @@
   left: 0;
   right: 0;
   z-index: 10;
+
+  @media screen and (min-width: 1281px) {
+    padding: 0 calc(50% - 640px);
+  }
 
   &__logo img {
     display: block;
@@ -25,6 +28,17 @@
     top: 100px;
     background: $white-color;
     display: none;
+
+    @media screen and (min-width: 1180px) {
+      display: flex;
+      position: relative;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: transparent;
+      width: 68%;
+    }
   }
 
   &__phones {
@@ -57,6 +71,12 @@
         font-weight: 400;
       }
     }
+
+    @media screen and (min-width: 1180px) {
+      flex-direction: row;
+      padding: 0;
+      gap: 10px;
+    }
   }
 
   & .btn {
@@ -76,6 +96,11 @@
     padding: 0;
     list-style-type: none;
     padding: 40px 0;
+
+    @media screen and (min-width: 1180px) {
+      flex-direction: row;
+      padding: 0;
+    }
   }
 
   &__link {
@@ -89,4 +114,28 @@
 
 .menu-is-open {
   display: block;
+
+  @media screen and (min-width: 1180px) {
+    display: flex;
+  }
+}
+
+#menu-btn {
+  @media screen and (min-width: 1180px) {
+    display: none;
+  }
+}
+
+#phone-btn {
+  @media screen and (min-width: 1180px) {
+    padding: 10px;
+    border-radius: 50%;
+    width: fit-content;
+  }
+
+  & span {
+    @media screen and (min-width: 1180px) {
+      display: none;
+    }
+  }
 }
