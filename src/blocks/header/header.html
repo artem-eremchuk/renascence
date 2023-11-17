@@ -2,8 +2,42 @@
   <div class="header__logo">
     <img src="assets/images/logo.svg" alt="logo" class="header__logo-img">
   </div>
+  <div class="header__nav">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#">О компании</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Новости</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Документы</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__phones">
+      <div class="header__phones-number">
+        <a href="tel:+7982452287">
+          +7 982 45-22-67
+        </a>
+        <span>
+          Пн-Пт. с 8:00 до 19:00
+        </span>
+      </div>
+      @@include('../button/button.html',
+      {"text": "Заказать звонок",
+      "image": "assets/images/icons/phone.svg",
+      "id": "phone-btn"
+      })
+    </div>
+  </div>
   @@include('../button/button.html',
   {"text": "Меню",
-  "image": "assets/images/icons/burger.svg"
+  "image": "assets/images/icons/burger.svg",
+  "id": "menu-btn"
   })
 </header>
