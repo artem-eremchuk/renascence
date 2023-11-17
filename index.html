@@ -6,8 +6,7 @@
   <title>Главная страница</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 <body>
@@ -15,7 +14,39 @@
   <div class="header__logo">
     <img src="assets/images/logo.svg" alt="logo" class="header__logo-img">
   </div>
-  <button class="btn">
+  <div class="header__nav">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#">О компании</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Новости</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Документы</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__phones">
+      <div class="header__phones-number">
+        <a href="tel:+7982452287">
+          +7 982 45-22-67
+        </a>
+        <span>
+          Пн-Пт. с 8:00 до 19:00
+        </span>
+      </div>
+      <button class="btn" id=phone-btn>
+  <span class="btn__text">Заказать звонок</span>
+  <img class="btn__img" src=assets/images/icons/phone.svg alt="btn-img">
+</button>
+    </div>
+  </div>
+  <button class="btn" id=menu-btn>
   <span class="btn__text">Меню</span>
   <img class="btn__img" src=assets/images/icons/burger.svg alt="btn-img">
 </button>
@@ -50,7 +81,7 @@
         </div>
       </div>
     </div>
-    <button class="btn">
+    <button class="btn" id=@@id>
   <span class="btn__text">Выбрать квартиру</span>
   <img class="btn__img" src=assets/images/icons/white-building.svg alt="btn-img">
 </button>
@@ -82,7 +113,7 @@
         </div>
       </div>
     </div>
-    <button class="btn">
+    <button class="btn" id=@@id>
   <span class="btn__text">Выбрать квартиру</span>
   <img class="btn__img" src=assets/images/icons/white-building.svg alt="btn-img">
 </button>
@@ -114,7 +145,7 @@
         </div>
       </div>
     </div>
-    <button class="btn">
+    <button class="btn" id=@@id>
   <span class="btn__text">Выбрать квартиру</span>
   <img class="btn__img" src=assets/images/icons/white-building.svg alt="btn-img">
 </button>
@@ -135,7 +166,7 @@
             <span>Закажите бесплатную консультацию</span>
           </div>
         </div>
-        <button class="btn">
+        <button class="btn" id=@@id>
   <span class="btn__text">Заказать консультацию</span>
   <img class="btn__img" src=assets/images/icons/arrow.svg alt="btn-img">
 </button>
@@ -184,7 +215,7 @@
               <img src="assets/images/icons/instagram.svg" alt="instagram">
             </a>
           </div>
-          <button class="btn">
+          <button class="btn" id=@@id>
   <span class="btn__text">@@text</span>
   <img class="btn__img" src=assets/images/icons/arrow.svg alt="btn-img">
 </button>
