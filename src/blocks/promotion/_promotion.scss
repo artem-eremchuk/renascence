@@ -1,0 +1,49 @@
+.promotion {
+  display: flex;
+  height: 700px;
+  overflow: hidden;
+
+  &__block {
+    align-self: stretch;
+    height: 100%;
+    transform: skewX(-15deg) scale(1.5);
+    overflow: hidden;
+
+    &:nth-child(1){
+      flex: 55%;
+    }
+
+    &:nth-child(2){
+      flex: 20%;
+    }
+
+    &:nth-child(3){
+      flex: 25%;
+    }
+  }
+  
+  &__bg-image {
+    &_1 {
+      background-color: blue;
+      background: top / 100% no-repeat url('../../../assets/images/main-screen/main-screen-1.png');
+      transform: skewX(15deg);
+      height: 100%;
+      width: 100%;
+    }
+    
+    &_2 {
+      background-color: red;
+      background: bottom / 100% no-repeat url('../../../assets/images/main-screen/main-screen-1.png');
+      transform: skew(15deg) scale(1.3);
+      height: 100%;
+    }
+    
+    &_3 {
+      background-color: greenyellow;
+      background: top / 100% no-repeat url('../../../assets/images/main-screen/main-screen-2.png');
+      transform: skewX(15deg) scale(1.3);
+      height: 100%;
+    }
+  }
+
+}
