@@ -12,7 +12,6 @@
   &__list {
     display: flex;
     flex-direction: column;
-    padding-bottom: 120px;
     gap: 20px;
 
     @media screen and (min-width: 1024px) {
@@ -116,8 +115,6 @@
   }
 
   & .btn {
-    background: $gradient-color;
-    color: $white-color;
     padding: 30px 0;
     width: 100%;
     font-size: 16px;
