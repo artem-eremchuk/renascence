@@ -13,7 +13,10 @@ menuBtn.addEventListener("click", () => {
 });
 
 window.addEventListener("resize", () => {
-  if (window.screen.width > 1180) {
+  if (
+    window.screen.width > 1179 &&
+    headerNav.classList.contains("menu-is-open")
+  ) {
     headerNav.classList.remove("menu-is-open");
     menuBtnImg.src = "assets/images/icons/burger.svg";
   }
