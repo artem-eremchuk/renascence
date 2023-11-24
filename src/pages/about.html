@@ -3,11 +3,13 @@
 @@include('../blocks/head/head.html', {"title": "О компании"})
 <body>
   @@include('../blocks/header/header.html')
-  <!-- @@include('../blocks/promotion/promotion.html') -->
   <main class="main">
-    @@include('../blocks/room-layout/room-layout.html')
-    @@include('../blocks/how-to-buy/how-to-buy.html')
-    @@include('../blocks/partners/partners.html')
+    @@include('../blocks/map/map.html')
+    <div class="container">
+      @@include('../blocks/room-layout/room-layout.html')
+      @@include('../blocks/how-to-buy/how-to-buy.html')
+      @@include('../blocks/partners/partners.html')
+    </div>
   </main>
   @@include('../blocks/footer/footer.html')
   <script src="assets/js/script.min.js"></script>

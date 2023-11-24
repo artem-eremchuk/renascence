@@ -1,0 +1,58 @@
+.map {
+  position: relative;
+  width: 100%;
+
+  &__icons {
+    width: 253px;
+    position: absolute;
+    right: 60px;
+    bottom: 40px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0px 10px 10px 0px rgba(0, 32, 64, 0.10);
+    backdrop-filter: blur(2.5px);
+    padding: 30px 30px 10px;
+    box-sizing: border-box;
+
+    &-img img {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 1024px) {
+      padding: 20px 20px 10px;
+      width: fit-content;
+      right: 20px;
+      bottom: 20px;
+    }
+
+    &-item {
+      display: flex;
+      gap: 15px;
+
+      &-text {
+        flex-grow: 1;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 10px 0px;
+      }
+
+      &:last-child {
+        display: none;
+      }
+
+      @media screen and (max-width: 1024px) {
+        display: none;
+
+        &:last-child {
+          display: block;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      &:last-child {
+        display: block;
+      }
+    }
+  }
+}
