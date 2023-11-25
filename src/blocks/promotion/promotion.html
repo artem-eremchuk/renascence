@@ -1,11 +1,29 @@
-<section class="promotion">
-  <div class="promotion__block">
-    <div class="promotion__bg-image promotion__bg-image_1"></div>
-  </div>
-  <div class="promotion__block">
-    <div class="promotion__bg-image promotion__bg-image_2"></div>
-  </div>
-  <div class="promotion__block">
-    <div class="promotion__bg-image promotion__bg-image_3"></div>
+<section class="promotion container">
+  <div class="promotion__wrapper">
+    <div class="promotion__img">
+      <img src="assets/images/main-screen/main-bg-mobile.jpg" alt="house">
+    </div>
+    <div class="promotion__content">
+      <h2 class="promotion__title">
+        Доступные квартиры
+        <br>от 1, 6 млн. руб. в Рыбинске
+      </h2>
+      <h2 class="promotion__title-mobile">
+        Более <span class="digital">1000</span> комфортных квартир от 2,3 млн рублей в Дзержинском р-не Ярославля
+      </h2>
+      <div class="promotion__description">
+        Сдача дома: декабрь 2021 год
+      </div>
+      <div class="promotion__buttons">
+        @@include('../button/button.html', {
+        "text": "Выбрать квартиру",
+        "image": "assets/images/icons/white-building.svg"
+        })
+        @@include('../button/button.html', {
+        "text": "Получить консультацию",
+        "image": ""
+        })
+      </div>
+    </div>
   </div>
 </section>
